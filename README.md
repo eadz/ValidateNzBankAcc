@@ -1,7 +1,6 @@
 # ValidateNzBankAcc
 
-An implementation of the process described on page 15 of
-http://www.ird.govt.nz/resources/a/c/ac60890040b57d0e9bd4df41f9f3ce1d/rwt-nrwt-spec-2010-v3.pdf
+An implementation of the process described on page 15 of an IRD pdf, see TODO for link.
 
 ## Installation
 
@@ -37,3 +36,8 @@ This was originaly developed my myself + others at Localist and released under t
 ## TODO
 
 Update specs from 2012 era syntax
+
+TODO, doublecheck against new PDF version
+
+https://www.ird.govt.nz/-/media/project/ir/home/documents/income-tax/withholding-taxes/rwt-nrwt-withholding-tax-certificate/2020-rwt-and-nrwt-certificate-filing-specification.pdf
+
