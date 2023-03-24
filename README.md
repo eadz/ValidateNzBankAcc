@@ -28,3 +28,12 @@ Or install it yourself as:
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+
+## History
+
+This was originaly developed my myself + others at Localist and released under the MIT licence.
+
+## TODO
+
+Update specs from 2012 era syntax

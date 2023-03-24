@@ -5,27 +5,26 @@ describe ValidateNzBankAcc do
   let(:ex2) { ValidateNzBankAcc.new("08","6523","1954512","001") }
   let(:ex3) { ValidateNzBankAcc.new("26","2600","0320871","032") }
 
-
   describe "valid_bank_code?" do
     it "should check against BANKS for the bank code" do
-      ValidateNzBankAcc.new("03","0123","0034141","03").valid_bank_code?.should be_true
-      ValidateNzBankAcc.new("01","1113","0034141","03").valid_bank_code?.should be_true
-      ValidateNzBankAcc.new("20","0123","1111111","11").valid_bank_code?.should be_true
-      ValidateNzBankAcc.new("05","0123","0034141","03").valid_bank_code?.should be_false # no back 05
+      ValidateNzBankAcc.new("03","0123","0034141","03").valid_bank_code?.should be_truthy
+      ValidateNzBankAcc.new("01","1113","0034141","03").valid_bank_code?.should be_truthy
+      ValidateNzBankAcc.new("20","0123","1111111","11").valid_bank_code?.should be_truthy
+      ValidateNzBankAcc.new("05","0123","0034141","03").valid_bank_code?.should be_falsy # no back 05
     end
   end
 
   describe "valid_bank_branch?" do
     it "should validate the branch code against the range of valid branches" do
       # VALIDS
-      ValidateNzBankAcc.new("03","0123","0034141","03").valid_branch_code?.should be_true
-      ValidateNzBankAcc.new("26","2600","0034141","03").valid_branch_code?.should be_true
-      ValidateNzBankAcc.new("26","2699","0034141","0003").valid_branch_code?.should be_true
-      ValidateNzBankAcc.new("11","6666","0034141","0003").valid_branch_code?.should be_true
+      ValidateNzBankAcc.new("03","0123","0034141","03").valid_branch_code?.should be_truthy
+      ValidateNzBankAcc.new("26","2600","0034141","03").valid_branch_code?.should be_truthy
+      ValidateNzBankAcc.new("26","2699","0034141","0003").valid_branch_code?.should be_truthy
+      ValidateNzBankAcc.new("11","6666","0034141","0003").valid_branch_code?.should be_truthy
 
       # INVALIDS
-      ValidateNzBankAcc.new("11","1111","0034141","0003").valid_branch_code?.should be_false
-      ValidateNzBankAcc.new("01","2012","0034141","0003").valid_branch_code?.should be_false
+      ValidateNzBankAcc.new("11","1111","0034141","0003").valid_branch_code?.should be_falsy
+      ValidateNzBankAcc.new("01","2012","0034141","0003").valid_branch_code?.should be_falsy
     end
   end
 
@@ -64,9 +63,9 @@ describe ValidateNzBankAcc do
 
   describe "valid_modulo?" do
     it "should valid modulo for the example in the pdf" do
-      ex1.valid_modulo?.should be_true
-      ex1.valid_modulo?.should be_true
-      ex1.valid_modulo?.should be_true
+      ex1.valid_modulo?.should be_truthy
+      ex1.valid_modulo?.should be_truthy
+      ex1.valid_modulo?.should be_truthy
     end
   end
 end
