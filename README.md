@@ -1,6 +1,8 @@
 # ValidateNzBankAcc
 
-An implementation of the process described on page 15 of an IRD pdf, see TODO for link.
+An implementation of the process described on page 15 of an [IRD pdf](
+https://www.ird.govt.nz/-/media/project/ir/home/documents/income-tax/withholding-taxes/rwt-nrwt-withholding-tax-certificate/2020-rwt-and-nrwt-certificate-filing-specification.pdf
+)
 
 ## Installation
 
@@ -31,13 +33,9 @@ Or install it yourself as:
 
 ## History
 
-This was originaly developed my myself + others at Localist and released under the MIT licence.
+This was originaly developed my myself + others at Localist NZ and released under the MIT licence.
 
 ## TODO
 
 Update specs from 2012 era syntax
-
-TODO, doublecheck against new PDF version
-
-https://www.ird.govt.nz/-/media/project/ir/home/documents/income-tax/withholding-taxes/rwt-nrwt-withholding-tax-certificate/2020-rwt-and-nrwt-certificate-filing-specification.pdf
 
